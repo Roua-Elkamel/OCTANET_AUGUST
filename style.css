@@ -1,0 +1,315 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+
+.navbar .site-name {
+    color: #fd12d6;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(51, 50, 50, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 5px;
+    font-size: 17px;
+    border: none;
+}
+
+.search-container button {
+    padding: 6px 10px;
+    margin-left: 5px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #ccc;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 50px 0;
+    background-color: #222;
+}
+
+.img1, .img2, .img3 {
+    width: 30%;
+    height: 400px; 
+    display: inline-block;
+    margin: 0; 
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img1 {
+    background-image: url(extraordinaryattourney.jpg);
+}
+
+.img2 {
+    background-image: url(goblin.jpg);
+}
+
+.img3 {
+    background-image:url(the-light-in-your-eyes.jpg);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25vh;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.center-text h2 {
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    padding: 60px;
+    background: #333;
+    color: white;
+}
+
+.genre {
+    padding: 50px 20px;
+}
+
+.drama-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.drama-item {
+    position: relative;
+    width: 23%;
+    margin-bottom: 20px;
+}
+
+.drama-item img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover; 
+}
+
+.info-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.info-desc {
+    display: none;
+    background: white;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    background-image: url('footer-background.jpg');
+    background-size: cover;
+    background-position: center;
+    border-top: 1px solid #ddd;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-content > div {
+    margin-bottom: 20px;
+}
+
+.footer-content h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #666;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content ul li {
+    margin-bottom: 5px;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.footer-social a:hover {
+    color: #007bff;
+}
+
+.footer p {
+    margin-top: 10px;
+    color: #333;
+}
+
+
+@media (max-width: 1200px) {
+    .img1, .img2, .img3 {
+        width: 32%;
+    }
+}
+
+@media (max-width: 992px) {
+    .img1, .img2, .img3 {
+        width: 48%;
+        height: 300px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .img1, .img2, .img3 {
+        width: 100%;
+        height: 250px; 
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .search-container input {
+        font-size: 15px;
+    }
+
+    .search-container button {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-container input, .search-container button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
